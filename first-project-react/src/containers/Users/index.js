@@ -56,7 +56,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button>
+        <Button onClick={goBackPage}>
         <img class="arrow" alt="Seta" src={Arrow} /> Voltar 
         </Button>
 

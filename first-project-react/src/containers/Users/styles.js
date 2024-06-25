@@ -15,7 +15,7 @@ min-height: 100vh;
 
 export const Image = styled.img `
 margin-top: 30px;
-width: 350px;
+width: 300px;
 `;
 
 export const ContainerItens = styled.div `
@@ -27,7 +27,7 @@ display: flex;
 flex-direction: column;
 height: 100%; 
 min-height: calc(100vh - 170px);
-width: 300px ;
+width: 340px ;
 margin-top: 20px;
 
 
@@ -46,8 +46,8 @@ font-variant: small-caps;
 `
 
 export const Button = styled.button `
-width: 300px;
-height: 55px;
+width: 270px;
+height: 50px;
 margin-top: 130px;
 background-color: transparent;
 border-radius: 10px;
@@ -87,8 +87,8 @@ margin-top: 30px;
 background: rgba(255, 255, 255, 0.25);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-width: 300px;
-height: 45px;
+width: 270px;
+height: 40px;
 
 border: none;
 outline: none;

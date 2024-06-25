@@ -23,7 +23,7 @@ padding: 50px 35px;
 display: flex;
 flex-direction: column;
 height: 100vh; 
-width: 300px ;
+width: 340px ;
 margin-top: 20px;
 
 &:hover {
@@ -54,8 +54,8 @@ export const Input = styled.input `
 background: rgba(255, 255, 255, 0.25);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-width: 280px;
-height: 45px;
+width: 270px;
+height: 40px;
 font-size: 16px;
 padding-left: 15px;
 border: none;
@@ -65,8 +65,8 @@ margin-bottom: 30px;
 `
 
 export const Button = styled.button `
-width: 300px;
-height: 55px;
+width: 270px;
+height: 50px;
 margin-top: 130px;
 background-color: black;
 border-radius: 10px;

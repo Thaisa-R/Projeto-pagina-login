@@ -53,20 +53,20 @@ app.put('/users/:id', checkUserId, (request, response) => {
 
     const updateUser = {id, name, age}
   
-    users[index] = updateUser
+    users[index] = updateUser;
 
-    return response.json(updateUser)
+    return response.json(updateUser);
 });
 
 app.delete('/users/:id', checkUserId, (request, response) => {
-    const index = request.userIndex
+    const index = request.userIndex;
 
-    users.splice(index,1)
+    users.splice(index,1);
 
-    return response.status(204).json()
+    return response.status(204).json();
 });
 
 app.listen(port, () => {
-    console.log(`Server started on port ${port}`)
+    console.log(`Server started on port ${port}`);
 });
 

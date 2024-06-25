@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Background from "./assets/background.jpg"
+import Background from "../../assets/background.jpg";
+import {Link} from "react-router-dom";
 
 export const Container = styled.div `
 background: url("${Background}");
@@ -64,9 +65,10 @@ color: #ffffff;
 margin-bottom: 30px;
 `
 
-export const Button = styled.button `
+export const Button = styled(Link) `
 width: 300px;
 height: 55px;
+margin-top: 130px;
 background-color: black;
 border-radius: 10px;
 border: none;
@@ -92,42 +94,6 @@ gap: 20px;
 .arrow {
     width: 20px;
 }
-`;
-
-
-export const User = styled.li `
-display: flex;
-justify-content: space-around;
-align-items: center;
-margin-top: 30px;
-
-background: rgba(255, 255, 255, 0.25);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-width: 300px;
-height: 45px;
-
-border: none;
-outline: none;
-
-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    color: #ffffff;
-}
-
- button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.bi-trash3 {
-    font-size: 20px;
-}
-
 `;
 
 

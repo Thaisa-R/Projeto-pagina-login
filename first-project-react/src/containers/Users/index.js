@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import axios from 'axios';
 
 import Avatar from "../../assets/img-avatar.png";
@@ -11,15 +13,16 @@ import { Container, H1, Image, ContainerItens, Button, User } from "./styles";
 
 function Users() {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    async function fetchUsers(){
+    async function fetchUsers() {
       const { data: newUsers } = await axios.get("http://localhost:3001/users");
 
       setUsers(newUsers);
     }
 
-    fetchUsers()
+    fetchUsers();
   }, []);
 
 
@@ -29,6 +32,10 @@ function Users() {
     const newUsers = users.filter((user) => user.id !== userId);
   
     setUsers(newUsers);
+  }
+
+  function goBackPage() {
+    navigate("/");
   }
 
   return (
@@ -49,7 +56,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button to="/">
+        <Button>
         <img class="arrow" alt="Seta" src={Arrow} /> Voltar 
         </Button>
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Background from "../../assets/background-invert.jpg"
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div `
 background: url("${Background}");
@@ -45,7 +45,7 @@ margin-bottom: 80px;
 font-variant: small-caps;
 `
 
-export const Button = styled(Link) `
+export const Button = styled.button `
 width: 300px;
 height: 55px;
 margin-top: 130px;

@@ -1,5 +1,8 @@
 import React, { useState, useRef } from "react";
-import axios from 'axios';
+
+import { useNavigate } from "react-router-dom";
+
+import axios from "axios";
 
 import Register from "../../assets/img-register.png";
 
@@ -10,6 +13,7 @@ import { Container, H1, Image, ContainerItens, InputLabel, Input, Button } from 
 
 function App() {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
   const inputName = useRef();
   const inputAge = useRef();
 
@@ -21,6 +25,8 @@ function App() {
     });
 
     setUsers([...users, newUser]);
+    
+    navigate("/usuarios");
   }
 
   return (
@@ -36,9 +42,10 @@ function App() {
         <InputLabel>Idade</InputLabel>
         <Input ref={inputAge} placeholder="Idade"></Input>
 
-        <Button to="/usuarios" onClick={addNewUser}>
+        <Button onClick={addNewUser}>
           Cadastrar <img class="arrow" alt="Seta" src={Arrow} />
         </Button>
+        
       </ContainerItens>
     </Container>
   );

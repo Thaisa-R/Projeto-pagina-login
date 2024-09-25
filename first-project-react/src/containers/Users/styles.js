@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Background from "../../assets/background-invert.jpg"
-import { Link } from "react-router-dom";
+
 
 export const Container = styled.div `
 background: url("${Background}");
@@ -15,7 +15,7 @@ min-height: 100vh;
 
 export const Image = styled.img `
 margin-top: 30px;
-width: 300px;
+width: 230px;
 `;
 
 export const ContainerItens = styled.div `
@@ -26,7 +26,7 @@ padding: 50px 35px;
 display: flex;
 flex-direction: column;
 height: 100%; 
-min-height: calc(100vh - 170px);
+min-height: calc(100vh - 200px);
 width: 340px ;
 margin-top: 20px;
 
@@ -47,8 +47,8 @@ font-variant: small-caps;
 
 export const Button = styled.button `
 width: 270px;
-height: 50px;
-margin-top: 130px;
+height: 60px;
+margin-top: 100px;
 background-color: transparent;
 border-radius: 10px;
 border: solid 1px #ffffff;

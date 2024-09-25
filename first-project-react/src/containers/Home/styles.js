@@ -12,7 +12,7 @@ gap: 40px;
 
 export const Image = styled.img `
 margin-top: 30px;
-width: 350px;
+width: 270px;
 `;
 
 export const ContainerItens = styled.div `
@@ -22,8 +22,8 @@ border-radius: 60px 60px 0px 0px;
 padding: 50px 35px;
 display: flex;
 flex-direction: column;
-height: 100vh; 
-width: 340px ;
+min-height: calc(100vh - 300px); 
+max-width: 340px;
 margin-top: 20px;
 
 &:hover {
@@ -55,7 +55,7 @@ background: rgba(255, 255, 255, 0.25);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 width: 270px;
-height: 40px;
+height: 50px;
 font-size: 16px;
 padding-left: 15px;
 border: none;
@@ -66,8 +66,8 @@ margin-bottom: 30px;
 
 export const Button = styled.button `
 width: 270px;
-height: 50px;
-margin-top: 130px;
+height: 60px;
+margin-top: 100px;
 background-color: black;
 border-radius: 10px;
 border: none;
